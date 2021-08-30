@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FishEye</title>
+    <!-- Kits -->
+    <!--Font Awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Scripts -->
+    <script type="module" src="../js/Image.js"></script>
+    <script type="module" src="../js/Video.js"></script>
+    <script type="module" src="../js/Media.js"></script>
+    <script type="module" src="../js/photographer_card.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/addlikes.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
+  </head>
+  <body>
+    <header class="logo">
+      <a
+        href="../index.html"
+        class="header_logo"
+        aria-label="Logo FishEye"
+        tabindex="1"
+      >
+        <img src="../images/fisheye_logo.png" alt="Fisheye Home page" />
+      </a>
+    </header>
+    <main>
+      <div id="photographers_card"></div>
+      <div class="filter">
+        <label for="photo_filter">Trier par</label>
+        <select name="photo_filter" id="photo_filter">
+          <option value="popular">Popularité</option>
+          <option value="date">Date</option>
+          <option value="title">Title</option>
+        </select>
+      </div>
+      <div
+        id="photo_grid"
+        role="grid"
+        aria-label="Photos"
+        aria-colcount="4"
+        aria-rowcount="3"
+      ></div>
+      <div id="modal_lightbox" class="lightbox">
+        <span class="close cursor" onclick="closeModal()" tabindex="1"
+          >&times;</span
+        >
+        <div id="lightbox-content" class="modal_lightbox-content">
+          <!-- Next/previous controls -->
+          <a
+            class="prev"
+            onclick="plusSlides(-1)"
+            tabindex="4"
+            aria-label="media précedent"
+            >&#10094;</a
+          >
+          <a
+            class="next"
+            onclick="plusSlides(1)"
+            tabindex="5"
+            aria-label="media suivant"
+            >&#10095;</a
+          >
+        </div>
+      </div>
+      <div class="total-likes-container">
+        <div class="total-likes" id="total-likes">
+          <span class="fas fa-heart heart heart-global"></span>
+        </div>
+        <div class="price" id="price"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

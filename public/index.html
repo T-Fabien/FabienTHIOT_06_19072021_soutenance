@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FishEye</title>
+    <!-- Kits -->
+    <!--Font Awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Scripts -->
+    <script src="./js/get_json_data.js"></script>
+    <script src="./js/indexgridcell.js"></script>
+    <script src="./js/index_filter.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header>
+      <a class="header_logo" role="img" aria-label="Logo FishEye" tabindex="2">
+        <img src="./images/fisheye_logo.png" alt="Fisheye Home page" />
+      </a>
+      <nav id="menu" class="index_navbar" aria-label="Main Menu">
+        <ul
+          role="menubar"
+          aria-label="Barre de navigation"
+          aria-labelledby="menu"
+        >
+          <li role="none" tabindex="3">
+            <a
+              role="menuitem"
+              href="#"
+              onclick="PhotographersFilter('portrait')"
+              ><span>#Portrait</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('art')"
+              ><span>#Art</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('fashion')"
+              ><span>#Fashion</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a
+              role="menuitem"
+              href="#"
+              onclick="PhotographersFilter('architecture')"
+              ><span>#Architecture</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('travel')"
+              ><span>#Travel</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('sport')"
+              ><span>#Sport</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('animals')"
+              ><span>#Animals</span></a
+            >
+          </li>
+          <li role="none" tabindex="3">
+            <a role="menuitem" href="#" onclick="PhotographersFilter('events')"
+              ><span>#Events</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1 tabindex="4">Nos Photographes</h1>
+    </header>
+    <main>
+      <div
+        id="photographers_grid"
+        role="grid"
+        aria-label="Photographes"
+        aria-colcount="3"
+        aria-rowcount="2"
+      ></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

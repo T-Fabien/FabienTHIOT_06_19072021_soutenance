@@ -2,7 +2,7 @@
   "name": "fisheye",
   "version": "1.0.0",
   "description": "FishEye",
-  "main": "index.js",
+  "main": "get_json_data.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss ./public/css/style.css --style compressed",
     "lint": "eslint ."

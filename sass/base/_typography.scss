@@ -1,0 +1,43 @@
+// Font face
+@font-face {
+    font-family: "Roboto_regular";
+    src: url("../font/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto_light";
+    src: url("../font/Roboto-Light.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Roboto_Medium";
+    src: url("../font/Roboto-Medium.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Roboto_gras";
+    src: url("../font/Roboto-Bold.ttf") format("truetype");
+}
+
+// Title
+
+body{
+    font-family: "Roboto_light", sans-serif;
+    width: 100%; 
+}
+
+h1,h2,h3,h5,h6,p,a{
+    font-family: "Roboto_light", sans-serif;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
